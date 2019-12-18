@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.ansonika.com/findoctor/admin_section/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 06 Dec 2017 11:15:24 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Ansonika">
+  <title>FINDOCTOR - Admin dashboard</title>
+	
+  <!-- Favicons-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+	
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icon fonts-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Plugin styles -->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="vendor/dropzone.css" rel="stylesheet">
+  <!-- Main styles -->
+  <link href="css/admin.css" rel="stylesheet">
+  <!-- Your custom styles -->
+  <link href="css/admin.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body class="fixed-nav sticky-footer" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" data-retina="true" alt="" width="163" height="36"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+             <li class="user-info">
+            <div class="admin-image"> <img src="../img/doctor_listing_3.jpg" alt=""> </div>
+            <div class="admin-action-info"> <span>Welcome</span>
+                <h3>Dr. Julia</h3>
+            </div>
+            <div class="quick-stats">
+                <h5>Today's Report</h5>
+                <ul>
+                    <li><span>20<i>Appointments</i></span></li>
+                    <li><span>16<i>Pending</i></span></li>
+                    <li><span>1<i>Home visits</i></span></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index - Copy.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Manage Bookings">
+          <a class="nav-link" href="bookings - Copy.html">
+            <i class="fa fa-fw fa-calendar-check-o"></i>
+            <span class="nav-link-text">Manage Bookings</span>
+          </a>
+        </li>
+		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add Schedule">
+          <a class="nav-link" href="add-listing - Copy.html">
+            <i class="fa fa-fw fa-plus-circle"></i>
+            <span class="nav-link-text">Add Schedule</span>
+          </a>
+        </li>
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Manage profile"> <a class="nav-link" href="doctor-profile - Copy.html"> <i class="fa fa-fw fa-wrench"></i> <span class="nav-link-text">Manage profile</span> </a></li>
+       
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Account Settings"> <a class="nav-link" href="user-profile - Copy.html"> <i class="fa fa-fw fa-gear"></i> <span class="nav-link-text">Account Settings</span> </a>
+      </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">New Messages:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>David Miller</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>Jane Smith</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>John Doe</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /Navigation-->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Add Schedule</li>
+      </ol>
+		
+		<div class="box_general padding_bottom">
+			<div class="header_box version_2">
+				<h2><i class="fa fa-file-text"></i>Schedule</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+									<div class="form-group">
+									<label>Schedule Start date</label>
+										<input class="form-control" type="date" name="booking_date">
+									</div>
+								</div>
+				<div class="col-md-6">
+									<div class="form-group">
+									<label>Schedule End date</label>
+										<input class="form-control" type="date" name="booking_date">
+									</div>
+								</div>
+			</div>
+			<!-- /row-->
+			<div class="row">
+				<div class="col-md-6">
+          <div class="form-group">
+            <label>Consultation Duration</label>
+            <select class="form-control">
+              <option value="5">5 minutes</option>
+              <option value="10">10 minutes</option>
+              <option value="5">15 minutes</option>
+              <option value="10">20 minutes</option>
+              <option value="5">25 minutes</option>
+              <option value="10">30 minutes</option>
+              <option value="5">35 minutes</option>
+              <option value="10">40 minutes</option>
+              <option value="5">45 minutes</option>
+              <option value="10">50 minutes</option>
+              <option value="5">55 minutes</option>
+              <option value="10">60 minutes</option>
+            </select>
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+              <div class="form-group">
+                <label>Consultation Fees</label>
+                <input type="number" class="form-control" placeholder="Enter amount of Rs." required min="0">
+              </div>
+            </div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+				<div class="form-group"><label>Clinic is open on:</label></div>
+					
+				</div>
+				<div class="col-md-10">
+					<div class="form-group">
+						<input type="checkbox" name="weekday" value="Monday" checked> Monday 
+						<span style="padding-right: 20px;"></span>    
+
+						<input type="checkbox" name="weekday" value="Tuesday" checked> Tuesday 
+						<span style="padding-right: 20px;"></span>     
+						<input type="checkbox" name="weekday" value="Wednesday" checked> Wednesday 
+						<span style="padding-right: 20px;"></span>     
+						<input type="checkbox" name="weekday" value="Thursday" checked> Thursday 
+						<span style="padding-right: 20px;"></span>     
+						<input type="checkbox" name="weekday" value="Friday" checked> Friday   
+						<span style="padding-right: 20px;"></span>   
+						<input type="checkbox" name="weekday" value="Saturday" checked> Saturday 
+						<span style="padding-right: 20px;"></span>     
+						<input type="checkbox" name="weekday" value="Sunday"> Sunday  
+					</div>   
+				</div>
+			</div>
+			<!-- /row-->
+			<div class="row">
+				<div class="col-md-12">
+					<table id="pricing-list-container" style="width:100%;">
+					
+						<tr class="pricing-list-item">
+							<td>
+								<h6>Session 1</h6>
+								<div class="row">
+									
+
+									<div class="col-md-4">
+									<label>Select Start time</label>
+										<div class="form-group">
+											<input type="time" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+									<label>Select End time</label>
+										<div class="form-group">
+											<input type="time" class="form-control">
+										</div>
+									</div>
+								</div>
+							</td>
+								<td>
+								<h6>Session 2</h6>
+									<div class="row">
+									
+
+									<div class="col-md-4">
+									<label>Select Start time</label>
+										<div class="form-group">
+											<input type="time" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+									<label>Select End time</label>
+										<div class="form-group">
+											<input type="time" class="form-control">
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					</div>
+			</div>
+			<!-- /row-->
+			<div class="row">
+			
+				<div class="col-md-4">
+              <div class="form-group">
+                <label>Do you want to perform home visits <a href="#0" data-toggle="tooltip" data-placement="top" title="By selecting Yes, you will get patient's request for home visits and if you are able to treat that patient at his/her home, then you can accept it and serve the patients at the venue preferred by them."><i class="fa fa-fw fa-question-circle"></i></a></label>
+                <select class="form-control">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+				  </select>
+              </div>
+            </div>
+
+			</div>
+		</div>
+		<!-- /box_general-->
+		<p><a href="#0" class="btn_1 medium">Save</a></p>
+	  </div>
+	  <!-- /.container-fluid-->
+   	</div>
+    <!-- /.container-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © FinDoctor 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+	<script src="vendor/jquery.selectbox-0.2.js"></script>
+	<script src="vendor/retina-replace.min.js"></script>
+	<script src="vendor/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/admin.js"></script>
+	<!-- Custom scripts for this page-->
+	<script src="vendor/dropzone.min.js"></script>
+	
+</body>
+
+<!-- Mirrored from www.ansonika.com/findoctor/admin_section/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 06 Dec 2017 11:15:29 GMT -->
+</html>
